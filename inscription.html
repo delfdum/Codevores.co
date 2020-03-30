@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!-- les polices  -->
+    <script src="https://kit.fontawesome.com/682d71be2a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<!-- ICONE DANS ONGLET -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map.css">
+<!-- mon css -->
+    <link rel="stylesheet" type="text/css" href="./css/accueil.css">
+    <title>Codevores</title>
+  </head>
+
+<body class="bgContact">
+
+  <div class="row titrehome">
+        <h1><a href="accueil.html">Codevores.co</a></h1>
+  </div>
+
+  <!-- le Formulaire---------------------------------- -->
+  <!-- formulaire de contact -->
+<div class="formulaireContact">
+    <h2>S'inscrire</h2>
+    <form action="index.html" method="post">
+      <div class="caseAlignement lignedestinataire">
+        <div>
+          <label for="choix-destinataire"><p>Vous êtes:</p></label>
+            <select id="choix-destinataire">
+              <optgroup label="destinataire">
+                <option>développeuse</option>
+                <option>chercheur</option>
+              </optgroup>
+            </select>
+        </div>
+      </div>
+
+      <div class="caseAlignement">
+        <label for="nom" class="contactLabel">Nom* :</label>
+        <input type="text" id="nom" placeholder="Nom" class="contactInput" autofocus required>
+      </div>
+
+      <div class="caseAlignement">
+        <label for="prenom" class="contactLabel">Prénom* :</label>
+        <input type="text" id="prenom" placeholder="Prénom" class="contactInput" required>
+      </div>
+
+      <div class="caseAlignement">
+        <label for="mail" class="contactLabel">E-mail* :</label>
+        <input type="email" id="mail" name="user_mail" placeholder="e-mail" class="contactInput" required>
+      </div>
+
+      <div class="caseAlignement">
+      <label for="password" class="contactLabel">Mot de passe* :</label>
+      <input class="contactInput" id="password" type="password" name="password" placeholder="mot de passe" required>
+      <p class="colorwhite"> . > 8 caractères  .1 majuscule  .1 caractère spécial</p>
+      </div>
+
+      <div class="caseAlignement">
+      <label class="colorwhite" for=""><input type="checkbox" name="" value=""> Je ne souhaite pas recevoir les nouveautés et offres de Codevores</label>
+      </div>
+      <div class="caseAlignement">
+      <button class="valid-inscription" type="button" name="button">S'inscrire sur Codevores</button>
+      </div>
+      <div class="caseAlignement">
+      <p class="dejainscrit colorwhite">Vous êtes déjà inscrit? <button type="button" name="button" class="sinscrire"><a href="connexion.html">Connectez-vous</a></button></p>
+      </div>
+    </form>
+  </div>
+
+    <script src="accueil.js"></script>
+</body>
+</html>

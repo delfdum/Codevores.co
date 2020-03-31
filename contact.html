@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-<!-- les polices  -->
-    <script src="https://kit.fontawesome.com/682d71be2a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-<!-- ICONE DANS ONGLET -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./css/bootstrap.min.css.map.css">
-<!-- mon css -->
-    <link rel="stylesheet" type="text/css" href="./css/accueil.css">
-    <title>Codevores</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <!-- les polices  -->
+  <script src="https://kit.fontawesome.com/682d71be2a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <!-- ICONE DANS ONGLET -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/bootstrap.min.css.map.css">
+  <!-- mon css -->
+  <link rel="stylesheet" type="text/css" href="./css/accueil.css">
+  <title>Codevores</title>
+</head>
 
 <body class="bgContact">
 
   <div class="row titrehome focus-in-expand-fwd">
-        <h1><a href="accueil.html">Codevores.co</a></h1>
+    <h1><a href="accueil.html">Codevores.co</a></h1>
   </div>
 
-  <!-- le Formulaire---------------------------------- -->
   <!-- formulaire de contact -->
-<div class=" ">
-
-
-<div class="formulaireContact">
-    <h2>NOUS CONTACTER</h2>
-    <form action="index.html" method="post">
-      <div class="caseAlignement lignedestinataire">
-        <div>
-          <label for="choix-destinataire"><p>Destinataire :</p></label>
+  <div class=" ">  
+    <div class="formulaireContact">
+      <h2>NOUS CONTACTER</h2>
+      <form action="index.html" method="post">
+        <div class="caseAlignement lignedestinataire">
+          <div>
+            <label for="choix-destinataire"><p>Destinataire :</p></label>
             <select id="choix-destinataire">
               <optgroup label="destinataire">
                 <option>commercial</option>
@@ -41,46 +38,46 @@
                 <option>réclamations</option>
               </optgroup>
             </select>
+          </div>
         </div>
-      </div>
 
-      <div class="caseAlignement">
-        <label for="nom" class="contactLabel">Nom* :</label>
-        <input type="text" id="nom" placeholder="Nom" class="contactInput" autofocus required>
-      </div>
+        <div class="caseAlignement">
+          <label for="nom" class="contactLabel">Nom* :</label>
+          <input type="text" id="nom" placeholder="Nom" class="contactInput" autofocus required>
+        </div>
 
-      <div class="caseAlignement">
-        <label for="prenom" class="contactLabel">Prénom* :</label>
-        <input type="text" id="prenom" placeholder="Prénom" class="contactInput" required>
-      </div>
+        <div class="caseAlignement">
+          <label for="prenom" class="contactLabel">Prénom* :</label>
+          <input type="text" id="prenom" placeholder="Prénom" class="contactInput" required>
+        </div>
 
-      <div class="caseAlignement">
-        <label for="mail" class="contactLabel">E-mail* :</label>
-        <input type="email" id="mail" name="user_mail" placeholder="e-mail" class="contactInput" required>
-      </div>
+        <div class="caseAlignement">
+          <label for="mail" class="contactLabel">E-mail* :</label>
+          <input type="email" id="mail" name="user_mail" placeholder="e-mail" class="contactInput" required>
+        </div>
 
-      <div class="caseAlignement">
-        <label for="object" class="contactLabel">Objet de votre demande: </label>
-        <textarea name="name" rows="1" cols="15" id="object" placeholder="Objet de votre message"></textarea>
-      </div>
+        <div class="caseAlignement">
+          <label for="object" class="contactLabel">Objet de votre demande: </label>
+          <textarea name="name" rows="1" cols="15" id="object" placeholder="Objet de votre message"></textarea>
+        </div>
 
-      <div class="caseAlignement">
-        <textarea name="name" rows="10" cols="5" id="comments" placeholder="Votre message"></textarea>
-      </div>
+        <div class="caseAlignement">
+          <textarea name="name" rows="10" cols="5" id="comments" placeholder="Votre message"></textarea>
+        </div>
 
-      <div class="caseAlignement">
-        <label for="file-up" class="documentLabel">Joindre un document</label>
-        <input type="file" name="" value="" id="file-up" class="input-file">
-        <p class="preview">Aucun fichier sélectionné pour le moment.</p>
-      </div>
+        <div class="caseAlignement">
+          <label for="file-up" class="documentLabel">Joindre un document</label>
+          <input type="file" name="" value="" id="file-up" class="input-file">
+          <p class="preview">Aucun fichier sélectionné pour le moment.</p>
+        </div>
 
-      <div class="row-envoyer">
-        <input type="submit" name="" value="Envoyer" class="envoyer">
-      </div>
-    </form>
+        <div class="row-envoyer">
+          <input type="submit" name="" value="Envoyer" class="envoyer">
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 
-    <script src="accueil.js"></script>
+  <script src="accueil.js"></script>
 </body>
 </html>

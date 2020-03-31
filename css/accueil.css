@@ -307,16 +307,16 @@ a {
 }
 
 .menu {
-  position: absolute;
-  left: 50%;
-  margin-left: -179px;
-  padding-top: 20px;
-  padding-left: 190px;
-  width: 380px;
-  height: 250px;
-  box-sizing: border-box;
-  font-size: 20px;
-  text-align: left;
+  position: 										absolute;
+  left: 												50%;
+  margin-left: 									-179px;
+  padding-top: 									20px;
+  padding-left: 								190px;
+  width: 												380px;
+  height: 											250px;
+  box-sizing: 									border-box;
+  font-size: 										20px;
+  text-align: 									left;
 }
 
 .menu-item:hover {
@@ -475,9 +475,6 @@ h3 {
 
 
 /* corps du texte __________________________________________*/
-.cascade {
-
-}
 
 .taille-image {
   width: 											100%;
@@ -513,7 +510,7 @@ h3 {
 }
 
 
- .recrutdev {
+.recrutdev {
    background: 								#02B8F7;
 }
 .pagerecrutdev {
@@ -523,33 +520,35 @@ h3 {
 }
 
 .dev {
-	display: flex;
-flex-direction: column;
-justify-content: space-around;
-font-size: 1.3em;
-align-items: center;
+	display:										flex;
+	flex-direction: 						column;
+	justify-content: 						space-around;
+	font-size: 									1.3em;
+	align-items: 								center;
 }
+
 ol, ul {
-    list-style: 							none;
-    margin-bottom: 						-2vh;
+  list-style: 								none;
+  margin-bottom: 							-2vh;
 }
+
 .button-profil {
-    border: 2px solid #3f3f3f;
-    background-color: inherit;
-    width: 184px;
-    height: 47px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3%;
-    font-size: 1.1em;
-    margin-bottom: 7vh;
+    border: 								2px solid #3f3f3f;
+    background-color: 			inherit;
+    width: 									184px;
+    height: 								47px;
+    display: 								flex;
+    flex-direction: 				column;
+    justify-content: 				center;
+    align-items: 						center;
+    border-radius: 					3%;
+    font-size: 							1.1em;
+    margin-bottom: 					7vh;
 }
 .button-profil:hover, .button-profil:active {
 	border: 										solid 2px white;
-	width: 184px;
-	height: 47px;
+	width: 											184px;
+	height:										  47px;
 }
 
 
@@ -575,7 +574,7 @@ ol, ul {
 	font-family:               'Anton', sans-serif;
   font-size:                  3em;
   color:                      white;
-	text-shadow: 4px 5px 0 #184d96, 0 4px 0 #184d96;
+	text-shadow: 								4px 5px 0 #184d96, 0 4px 0 #184d96;
 	margin: 										20px 20px;
 }
 
@@ -914,8 +913,8 @@ a.waves-effect, a.waves-light {
 /* ACTUALITES___________________________________ */
 
 .actualites-geekzone {
-	width: 55%;
-	margin: 5vh auto;
+		width: 											55%;
+		margin: 										5vh auto;
 }
 
 .actu{
@@ -945,7 +944,6 @@ a.waves-effect, a.waves-light {
 	align-items: 							center;
 	margin: 									28px 9vw;
 }
-
 
 .icone {
 	padding:									10px;

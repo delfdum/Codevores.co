@@ -1,485 +1,485 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-<!-- les polices  -->
-    <script src="https://kit.fontawesome.com/682d71be2a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-<!-- ICONE DANS ONGLET -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- mon css -->
-    <link rel="stylesheet" type="text/css" href="./css/accueil.css">
-    <title>Codevores</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <!-- les polices  -->
+  <script src="https://kit.fontawesome.com/682d71be2a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <!-- ICONE DANS ONGLET -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- mon css -->
+  <link rel="stylesheet" type="text/css" href="./css/accueil.css">
+  <title>Codevores</title>
+</head>
 
-  <body class="bgblue">
-    <div class="menuCommunauty">
-<!-- les boutons inscription et connection et titres ************************** -->
-      <div class="buttonbase">
-        <button class="btn-connection" type="button" name="button"><a href="connexion.html">connection</a></button>
-        <button class="btn-inscription" type="button" name="button"><a href="inscription.html">inscription</a></button>
-      </div>
-      <h1 class="h1entete">codevores.co</h1> <br>
-      <h2 class="h2entete">Votre développeuse en un clic!</h2>
-<!-- le menu    ************************************************************* -->
-      <nav class="menu">
-        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-        <label class="menu-open-button" for="menu-open">
-          <span class="hamburger hamburger-1"></span>
-          <span class="hamburger hamburger-2"></span>
-          <span class="hamburger hamburger-3"></span>
-        </label>
-        <a href="accueil.html" class="menu-item"> <i class="fas fa-home"></i> </a>
-        <a href="communauty.html" class="menu-item"> <i class="fas fa-users"></i></a>
-        <a href="actualites.html" class="menu-item"> <i class="far fa-newspaper"></i></a>
-        <a href="faq.html" class="menu-item"><i class="fas fa-question"></i> </a>
-        <a href="contact.html" class="menu-item"> <i class="fa fa-envelope"></i> </a>
-        <a href="#" class="menu-item"> <i class="fa fa-ellipsis-h"></i> </a>
-      </nav>
-      <!-- filters -->
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="shadowed-goo">
-            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-            <feComposite in2="shadow" in="goo" result="goo" />
-            <feComposite in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feComposite in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-        </defs>
-      </svg>
+<body class="bgblue">
+  <div class="menuCommunauty">
+    <!-- les boutons inscription et connection et titres ************************** -->
+    <div class="buttonbase">
+      <button class="btn-connection" type="button" name="button"><a href="connexion.html">connection</a></button>
+      <button class="btn-inscription" type="button" name="button"><a href="inscription.html">inscription</a></button>
     </div>
-
-    <!-- les slides profils -->
-<div class="container my-4">
-
-  <h2 class="center">Notre communauté de développeuses</h2>
-  <hr class="my-4">
-
-  <!--Carousel Wrapper-->
-  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-    <!--Controls-->
-    <div class="controls-top">
-      <h3> Nos freelances Expertes IT & Développeuses expérimentées</h3>
-      <div class="btn-fleche">
-      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-      </div>
-    </div>
-    <!--/.Controls-->
-
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-      <li data-target="#multi-item-example" data-slide-to="1"></li>
-      <li data-target="#multi-item-example" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-
-      <!--First slide-->
-      <div class="carousel-item active">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-01.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"> Lola Sheifer</h4>
-                <p class="card-text">développeur front-end wordpress</p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-02.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Flora Delvas</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-03.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Patricia Dumas</h4>
-                <p class="card-text">développeuse python/php/vuejs - scrapping </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-04.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Josy Arnaud</h4>
-                <p class="card-text">développeuse front-end, react, intégrateur </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.First slide-->
-
-      <!--Second slide-->
-      <div class="carousel-item">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-05.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Martine Giroud</h4>
-                <p class="card-text">développeuse python/php/vuejs - scrapping </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-06.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Zoé Filoute</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-07.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Nihaar Rosy</h4>
-                <p class="card-text">développeuse front-end, react, intégrateur </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-08.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Jeanne Roly</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.Second slide-->
-
-      <!--Third slide-->
-      <div class="carousel-item">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-09.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Julie Horiks</h4>
-                <p class="card-text">développeur front-end wordpress</p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-10.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Sofia Martin</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-11.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Aruba Joly</h4>
-                <p class="card-text">développeuse front-end, react, intégrateur </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-12.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Bénédicte Cazory</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!--/.Third slide-->
-
-    </div>
-    <!--/.Slides-->
-
+    <h1 class="h1entete">codevores.co</h1> <br>
+    <h2 class="h2entete">Votre développeuse en un clic!</h2>
+    <!-- le menu    ************************************************************* -->
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+      <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+      </label>
+      <a href="accueil.html" class="menu-item"> <i class="fas fa-home"></i> </a>
+      <a href="communauty.html" class="menu-item"> <i class="fas fa-users"></i></a>
+      <a href="actualites.html" class="menu-item"> <i class="far fa-newspaper"></i></a>
+      <a href="faq.html" class="menu-item"><i class="fas fa-question"></i> </a>
+      <a href="contact.html" class="menu-item"> <i class="fa fa-envelope"></i> </a>
+      <a href="#" class="menu-item"> <i class="fa fa-ellipsis-h"></i> </a>
+    </nav>
+    <!-- filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="shadowed-goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+      </defs>
+    </svg>
   </div>
-  <!--/.Carousel Wrapper-->
-</div>
 
-<!-- les slides profils Elles viennent de créer un profil -->
-<div class="container my-4">
+  <!-- les slides profils -->
+  <div class="container my-4">
 
+    <h2 class="center">Notre communauté de développeuses</h2>
+    <hr class="my-4">
 
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-  <hr class="my-4">
-
-  <!--Carousel Wrapper-->
-  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-    <!--Controls-->
-    <div class="controls-top">
-      <h3> Elles viennent de créer un profil</h3>
-      <div class="btn-fleche">
-      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+      <!--Controls-->
+      <div class="controls-top">
+        <h3> Nos freelances Expertes IT & Développeuses expérimentées</h3>
+        <div class="btn-fleche">
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
       </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-01.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> Lola Sheifer</h4>
+                  <p class="card-text">développeur front-end wordpress</p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-02.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Flora Delvas</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-03.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Patricia Dumas</h4>
+                  <p class="card-text">développeuse python/php/vuejs - scrapping </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-04.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Josy Arnaud</h4>
+                  <p class="card-text">développeuse front-end, react, intégrateur </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-05.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Martine Giroud</h4>
+                  <p class="card-text">développeuse python/php/vuejs - scrapping </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-06.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Zoé Filoute</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-07.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Nihaar Rosy</h4>
+                  <p class="card-text">développeuse front-end, react, intégrateur </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-08.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Jeanne Roly</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-09.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Julie Horiks</h4>
+                  <p class="card-text">développeur front-end wordpress</p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-10.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Sofia Martin</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-11.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Aruba Joly</h4>
+                  <p class="card-text">développeuse front-end, react, intégrateur </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-12.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Bénédicte Cazory</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
     </div>
-    <!--/.Controls-->
-
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-      <li data-target="#multi-item-example" data-slide-to="1"></li>
-      <li data-target="#multi-item-example" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-
-      <!--First slide-->
-      <div class="carousel-item active">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-01.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"> Lola Sheifer</h4>
-                <p class="card-text">développeur front-end wordpress</p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-02.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Flora Delvas</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-03.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Patricia Dumas</h4>
-                <p class="card-text">développeuse python/php/vuejs - scrapping </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-04.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Josy Arnaud</h4>
-                <p class="card-text">développeuse front-end, react, intégrateur </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.First slide-->
-
-      <!--Second slide-->
-      <div class="carousel-item">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-05.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Martine Giroud</h4>
-                <p class="card-text">développeuse python/php/vuejs - scrapping </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-06.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Zoé Filoute</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-07.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Nihaar Rosy</h4>
-                <p class="card-text">développeuse front-end, react, intégrateur </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-08.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Jeanne Roly</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.Second slide-->
-
-      <!--Third slide-->
-      <div class="carousel-item">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-09.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Julie Horiks</h4>
-                <p class="card-text">développeur front-end wordpress</p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-10.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Sofia Martin</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-11.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Aruba Joly</h4>
-                <p class="card-text">développeuse front-end, react, intégrateur </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 clearfix d-none d-md-block">
-            <div class="card mb-2">
-              <img class="card-img-top" src="./images/femmes-12.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title">Bénédicte Cazory</h4>
-                <p class="card-text">développeuse angular 9 / node / nativescript </p>
-                <a class="btn btn-primary">Voir le profil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!--/.Third slide-->
-
-    </div>
-    <!--/.Slides-->
-
+    <!--/.Carousel Wrapper-->
   </div>
-  <!--/.Carousel Wrapper-->
+
+  <!-- les slides profils Elles viennent de créer un profil -->
+  <div class="container my-4">
+
+
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <h3> Elles viennent de créer un profil</h3>
+        <div class="btn-fleche">
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-01.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> Lola Sheifer</h4>
+                  <p class="card-text">développeur front-end wordpress</p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-02.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Flora Delvas</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-03.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Patricia Dumas</h4>
+                  <p class="card-text">développeuse python/php/vuejs - scrapping </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-04.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Josy Arnaud</h4>
+                  <p class="card-text">développeuse front-end, react, intégrateur </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-05.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Martine Giroud</h4>
+                  <p class="card-text">développeuse python/php/vuejs - scrapping </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-06.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Zoé Filoute</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-07.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Nihaar Rosy</h4>
+                  <p class="card-text">développeuse front-end, react, intégrateur </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-08.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Jeanne Roly</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-09.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Julie Horiks</h4>
+                  <p class="card-text">développeur front-end wordpress</p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-10.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Sofia Martin</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-11.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Aruba Joly</h4>
+                  <p class="card-text">développeuse front-end, react, intégrateur </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/femmes-12.jpg"
+                alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Bénédicte Cazory</h4>
+                  <p class="card-text">développeuse angular 9 / node / nativescript </p>
+                  <a class="btn btn-primary">Voir le profil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
   </div>
 
   <!-- pour que les developpeuses nous rejoignent -->
   <div class="container-fluid  ">
-      <div class="border-ligne"></div>
+    <div class="border-ligne"></div>
     <div class="container recrutdev">
       <div class="row cascade">
         <article class="dev  interesponsive col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h3>Rejoignez-nous!</h3>
           <p class="interesponsive sizeresponsive">Vous êtes développeuse, rejoignez Codevores!
             <br>
-          <p class="interesponsive sizeresponsive">Le freelancing comme il devrait être:</p>
+            <p class="interesponsive sizeresponsive">Le freelancing comme il devrait être:</p>
             <ul>
               <li>- Des missions que vous choisissez</li>
               <li>- Un service simple et sécurisant</li>
@@ -519,14 +519,9 @@
     </div>
   </footer>
 
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>

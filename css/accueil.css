@@ -55,15 +55,23 @@ table {
 	font-size: 									3em;
 }
 
-.colorwhite{
+.colorwhite {
 	color:                      white;
 }
-/* boutons inscription et connection */
+
+p {
+	font-size: 									1.3em;
+}
+
+span {
+	font-weight: 								bold;
+}
+/*  boutons inscription et connection + le RESPONSIVE de ces 2 boutons_________________ */
  @media screen and (max-width: 600px)
 {
     .buttonbase
     {
-      justify-content: space-around;
+      justify-content: 					space-around;
     }
 }
 
@@ -73,6 +81,11 @@ table {
   padding: 											10px 10px;
   margin-left: 									12px;
 }
+
+.buttonbase a {
+ text-decoration: 							none;
+}
+
 
 .btn-connection {
   margin-right: 								25px;
@@ -90,20 +103,24 @@ table {
 }
 
 .btn-connection:hover, .btn-connection:active {
-	border: 										solid 4px #1F645A;
-	background:  white;
+	border: 											solid 4px #1F645A;
+	background:  									white;
+	overflow: 										visible;
 }
 .btn-inscription:hover, .btn-inscription:active {
-	border: 										solid 4px #1F645A;
+	border: 											solid 4px #1F645A;
+	background:  									white;
+	overflow: 										visible;
 }
-/* menu background et h1 h2 de l'entête _____________________________________ */
+
+/* menu background et h1 h2 de l'entête et responsive _________________________________ */
 .h1entete  {
   font-family:               	'Anton', sans-serif;
   font-size:                 	 5em;
   color:                     	 white;
-  text-align:                 	center;
+  text-align:                 center;
+	margin-top: 								-0.4em;
 }
-
 
  .h2entete {
    font-family:              	 'Anton', sans-serif;
@@ -112,12 +129,63 @@ table {
    text-align:                 center;
 }
 
-
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 900px) {
         .h1entete {
-          font-size:                  4em;
+          font-size:                	4em;
+					margin-top: 								-0.2em;
         }
+				.buttonbase {
+				  display:										flex;
+				  justify-content: 						space-around;
+				}
+				.center {
+			    text-align: center;
+			    font-family: 								'Anton', sans-serif;
+			    font-size: 									2em;
+				}
+				.igros {
+					float: 											left;
+				}
+				.intro {
+			    margin-top: 								12vw;
+			    margin-bottom: 							12vw;
+			    font-size: 									1em;
+			    display: 										flex;
+			    flex-direction: 						column;
+					justify-content: 						space-around;
+				}
+				.interesponsive {
+					padding-top: 								2vh;
+				}
+
+				.barrederecherche {
+			    display: 										flex;
+					flex-direction: 						column;
+			    justify-content: 						space-around;
+					align-items:
+			    padding-bottom: 						12vh;
+				}
+				.inputrecherc {
+				    overflow: 								visible;
+				    width: 										85%;
+				    padding: 									0.6em;
+				    border-radius: 						2%;
+				    margin: 									2vw;
+				}
+				.buttonrecherc {
+						border:  									solid #a9dfff;
+				    border-radius: 						11%;
+				    font-size: 								1.3em;
+				    width: 										46%;
+				    margin-left: 							12vh;
+				    margin-top: 							6vw;
+				}
+				.sizeresponsive{
+					 font-size: 								1em;
+				}
 }
+
+
 
 .menutitle {
   background: url("../images/fond5.jpg") no-repeat center center;
@@ -142,9 +210,14 @@ table {
   height:															680px;
 }
 
+.bgrecherche {
+	background: url("../images/fond5.jpg") no-repeat center center;
+
+}
+
 /* Menu pop-up ___________________________________ */
 .menu {
-  margin-top:													-17vh;
+  margin-top:													-13vh;
   position: 													relative;
 }
  @media all and  (max-width: 600px){
@@ -155,7 +228,9 @@ table {
 }
 
 a {
-  color: 															inherit;
+  color: 														inherit;
+	text-decoration: 									none;
+	}
 }
 
 .menu {
@@ -352,20 +427,27 @@ a {
 /* PAGE ACCUEIL--------------------------------------------- */
 /* intertitre__________________________________________ */
 .bgblue {
-  background: 										#fff;
+  background: 								#f0f0f2;
 }
 
-.container{
-  padding-top: 2%;
+.container {
+  padding-top: 								1%;
 }
 .titre {
-  text-align: center;
+  text-align: 								center;
 }
 
 .intro {
-  margin-top: 40px;
-  margin-bottom: 40px;
-	font-size: 1em;
+  margin-top: 								40px;
+  margin-bottom: 							40px;
+	font-size: 									1em;
+}
+.intertitre {
+    margin-top: 							5vh;
+}
+
+h2 {
+	font-size: 									0.8em;
 }
 
 h3 {
@@ -375,74 +457,182 @@ h3 {
 	text-align:                 center;
 }
 
-.border-ligne {
-		border-width:1px;
-		border-style:solid;
-		border-color:black;
-		width: 100%;
-		margin-bottom: 1%;
-		margin-top: 3%;
+.igros {
+    font-size: 								169%;
+    padding-bottom: 					2vh;
 }
+
+.border-ligne {
+		border-width:							1px;
+		border-style:							solid;
+		border-color:							black;
+		width: 										80%;
+		margin-bottom: 						3%;
+		margin-top: 							3%;
+		margin-left: 							10%;
+}
+
+
+
 /* corps du texte __________________________________________*/
 .cascade {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
 }
 
 .taille-image {
-  width: 100%;
+  width: 											100%;
 }
 
+.barrederecherche {
+	display: 										flex;
+	justify-content: 						space-around;
+	padding-bottom: 						10vh;
+}
+
+.inputrecherc {
+		overflow: 								visible;
+    width: 										32%;
+    padding: 									0.8em;
+    border-radius: 						2%;
+		border:  										solid #236853;
+}
+
+.buttonrecherc {
+		border:  										solid #236853;
+		border-radius: 							2%;
+		font-size: 									1.2em;
+}
+
+	.buttonrecherc:hover, .buttonrecherc:active {
+		border:  										solid white;
+}
+	.button-profil:hover, .button-profil:active {
+		border: 										solid 2px #010b52;
+		width: 											202px;
+		height: 										47px;
+}
+
+
  .recrutdev {
-   background: #4fa9f9de;
+   background: 								#02B8F7;
 }
-.pagerecrutdev{
+.pagerecrutdev {
   background-image: url("../images/community.png");
-  position: relative;
-  background-size: cover;
+  position: 									relative;
+  background-size: 						cover;
 }
+
+.dev {
+	display: flex;
+flex-direction: column;
+justify-content: space-around;
+font-size: 1.3em;
+align-items: center;
+}
+ol, ul {
+    list-style: 							none;
+    margin-bottom: 						-2vh;
+}
+.button-profil {
+    border: 2px solid #3f3f3f;
+    background-color: inherit;
+    width: 184px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+    font-size: 1.1em;
+    margin-bottom: 7vh;
+}
+.button-profil:hover, .button-profil:active {
+	border: 										solid 2px white;
+	width: 184px;
+	height: 47px;
+}
+
 
 /* PAGE CONTACT __ PAGE INSCRIPTION__ PAGE__CONNECTION_______________________________________________________________ */
 .bgContact {
   background: url("../images/fond5.jpg") no-repeat center center;
-	background-size: 					131%;
-	background-attachment: 		fixed;
+	background-size: 						131%;
+	background-attachment: 			fixed;
 }
 
 .bgConnexion {
   background: url("../images/fond6.jpg") no-repeat center center;
-	background-size: 					100%;
-	background-attachment: 		fixed;
+	background-size: 						100%;
+	background-attachment: 			fixed;
 }
 .bgInscription{
   background: url("../images/fond11.jpg") no-repeat center center;
-	background-size: 					100%;
-	background-attachment: 		fixed;
+	background-size: 						100%;
+	background-attachment: 			fixed;
 }
 
 .titrehome {
 	font-family:               'Anton', sans-serif;
   font-size:                  3em;
   color:                      white;
+	text-shadow: 4px 5px 0 #184d96, 0 4px 0 #184d96;
 	margin: 										20px 20px;
 }
 
 .row a {
- text-decoration: none;
+ text-decoration: 						none;
 }
 
 /* PAGE CONTACT */
+/* ANIMATION SUR LES 3 PAGES CONTACT INSCRIPTION ET CONNEXION */
+.focus-in-expand-fwd {
+	-webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+/* fin animation pris sur animista https://animista.net/play/text/focus-in/focus-in-expand-fwd */
 
 .formulaireContact {
-    display: flex;
-    flex-direction: column;
-    margin: -9vh 34vw 5vh 34vw;
-    border: #89B5B1 solid 2px;
-    box-shadow: 1px 1px 12px #555;
-    background: #184d96;
+    display: 									flex;
+    flex-direction: 					column;
+    margin: 									-9vh 34vw 5vh 34vw;
+    border: 									#89B5B1 solid 2px;
+    box-shadow: 							1px 1px 12px #555;
+    background: 							#184d96;
 }
 
 .caseAlignement {
@@ -456,7 +646,7 @@ h3 {
 .formulaireContact h2 {
 	font-family:               'Anton', sans-serif;
 	margin: 										8vh 0;
-  color: 											#E8E8E8;
+  color: 											white;
 	font-size: 									2.5rem;
   text-align: 								center;
 }
@@ -467,49 +657,82 @@ h3 {
 }
 
 .lignedestinataire p {
-	color: 											#E8E8E8;
+	color: 											white;
 	padding:		 								0 0 1vh 5vw;
 	font-size: 									1.2em;
 }
 
 .formulaireContact .contactLabel {
-	color: 											#E8E8E8;
+	color: 											white;
 	text-align: 								left;
 	font-size: 									1.2em;
+	margin: 										1vh;
+}
+/* page inscription */
+.button-inscription {
+	color: 											white;
+	background-color: 					inherit;
+	width: 											192px;
+	height: 										47px;
+	display: 										flex;
+	flex-direction: 						column;
+	justify-content: 						center;
+	align-items: 								center;
+	border-radius: 							3%;
+	font-size: 									1.2em;
+	margin-left: 								7vw;
 }
 
+.button-connecter {
+	color: 											white;
+	background-color: 					inherit;
+	width: 											130px;
+	height: 										30px;
+	display: 										flex;
+	flex-direction: 						column;
+	justify-content: 						center;
+	align-items: 								center;
+	border-radius: 							3%;
+	font-size: 									0.8em;
+	margin-left: 								9vw;
+}
 
 .documentLabel {
-	color: 											#E8E8E8;
+	color: 											white;
 	margin: 										2vh 5vw 0 5vw;
 	font-size: 									1.3em;
 	font-weight: 								bold;
-	border: 										solid 2px #E8E8E8;
+	border: 										solid 2px white;
 	background-color: 					inherit;
 	padding: 										2vh 2vw;
 	cursor: 										pointer;
 	text-align: 								center;
 }
 
+.detailpassword {
+	font-size: 									1em;
+	padding-top: 								1vh;
+}
 
 .input-file {
 	opacity: 										0;
 }
 
 .preview {
-	color: 											#E8E8E8;
-	text-align: 								center;
-	margin: 										2vh 5vw;
+	    color: 									white;
+	    text-align: 						center;
+	    margin: 								0vh 4vw;
+	    font-size: 							1em;
 }
 
 .envoyer {
 	font-size: 									1em;
 	font-weight: 								bold;
-	border: 										solid 2px #E8E8E8;
+	border: 										solid 2px white;
 	background-color: 					inherit;
-	margin: 										5vh 15vw;
+	margin: 										5vh 12vw;
 	padding: 										2vh 2vw;
-	color: 											#E8E8E8;
+	color: 											white;
 	cursor: 										pointer;
 }
 
@@ -521,8 +744,13 @@ h3 {
 }
 
 @media screen and (max-width: 1200px) {
+
 			.bgContact {
 				background-size: 					342%;
+			}
+			.titrehome {
+				margin: 2vh 16vw;
+				text-shadow: 4px 5px 0 #184d96, 0 4px 0 #184d96;
 			}
       .formulaireContact
       {
@@ -555,23 +783,81 @@ h3 {
         margin: 									0 28vw;
         padding: 									1vh 7vw;
       }
+			.row-center .envoyer {
+				margin: 									4vh 22vw;
+			}
+
+			.envoyer:hover, .envoyer:active {
+				border: 										solid 4px #1F645A;
+			}
+			.documentLabel:hover, .documentLabel:active {
+				border: 										solid 4px #1F645A;
+			}
+
+			.button-connecter {
+    		margin-left: 								20vw;
+		  }
+			.button-inscription {
+    		margin-left: 								13vw;
+		  }
+			.dev{
+				padding-bottom: 						2vh;
+			}
+			.button-profil {
+		    width: 											167px;
+		    height: 										42px;
+		    font-size: 									1em;
+		    padding-bottom: 						center;
+		    padding-bottom: 						2vh;
+				margin-top: 								1em;
+			}
+			.taille-image {
+		    width: 											100%;
+		    margin-top: 								-8vh;
+		  }
 }
 
 /* le FAQ --------------------------------------------------------------------*/
-
+.recrutdev1{
+  background: 									#7cd4ff;
+}
 
 .accordion , .hfaq {
-  width: 64%;
-  margin: 2vh auto;
+  width: 												64%;
+  margin: 											2vh auto;
 }
 .card-header {
-  background: #7cd4ff;
+  background: 									#7cd4ff;
+}
+.btn-link {
+    color: 											black;
+}
+.btn-link:focus, .btn-link:hover {
+    color: 											#20787A;
+    text-decoration: 						none;
+}
+
+.button-faq {
+	border: 2px solid #3f3f3f;
+	background-color: inherit;
+	width: 189px;
+	height: 62px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3%;
+	font-size: 1em;
+	margin-bottom: 7vh;
+}
+.button-faq:hover, .button-faq:active {
+	border: 										solid 2px white;
+	width: 189px;
+	height: 62px;
 }
 
 /* la communauté --------------------------------------------------------------*/
-.bgblue {
-  background: #8dc5e9;
-}
+
 
 .btn-floating i {
     font-size: 1.25rem;
@@ -585,7 +871,7 @@ h3 {
 élément {
 }
 .carousel-multi-item .controls-top .btn-floating {
-    background: #4285f4;
+    background: #02B8F7;
 }
 a.waves-effect, a.waves-light {
     display: inline-block;
@@ -606,7 +892,11 @@ a.waves-effect, a.waves-light {
     border-radius: 50%;
     padding: 0;
   }
-
+	.btn-primary {
+    color: #fff;
+    background-color: #02B8F7;
+    border-color:#02B8F7;
+}
   .controls-top {
     display: -webkit-flex;
     display: flex;
@@ -628,52 +918,40 @@ a.waves-effect, a.waves-light {
 	margin: 5vh auto;
 }
 
-/* #actuGeekzone{
-
-padding: 5vw;
-padding-top: 5vw;
-padding-right: 5vw;
-padding-bottom: 5vw;
-padding-left: 5vw;
-font-size: 2em;
-margin: 8vh;
-margin-top: 8vh;
-margin-right: 8vh;
-margin-bottom: 8vh;
-margin-left: 8vh;
-padding-top: 3vw;
-padding-right: -1vw;
-margin-right: -12vh;
-} */
-h4{
-	font-size: 2em;
-}
-
 .actu{
-    /* border: black, solid;
-    background-color: white;
-    width: 60%;
-    margin-left: 25%; */
-		color: 											#E8E8E8;
-		margin: 										2vh 5vw 0 5vw;
+	  width: 											100%;
+		margin: 										0vh 23vw 1vh -11vw;
 		font-size: 									1.3em;
-		font-weight: 								bold;
-		border: 										solid 2px #E8E8E8;
-		background-color: 					inherit;
 		cursor: 										pointer;
 		text-align: 								left;
+
+
 }
 
 /* FOOTER________________________________________________________ */
-#footer {
-	display: flex;
-	justify-content: space-around;
+.rowfooter {
+	display: 									flex;
+	flex-wrap: 								wrap;
+	justify-content: 					center;
+	align-items: 							center;
+	align-content: 						center;
+	padding: 									2vh 0vw 2vh 0vw;
 }
 
+.rowfooter1 {
+	display: 									flex;
+	flex-direction: 					column;
+	justify-content: 					space-around;
+	align-items: 							center;
+	margin: 									28px 9vw;
+}
+
+
 .icone {
-	display:flex;
-	justify-content: flex-end;
-	justify-content: space-around;
-	padding:10px;
-	font-size: 180%;
+	padding:									10px;
+	font-size: 								180%;
+}
+
+a {
+ text-decoration: 							none;
 }

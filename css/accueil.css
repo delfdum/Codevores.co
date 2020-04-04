@@ -511,7 +511,8 @@ h3 {
 
 
 .recrutdev {
-   background: 								#02B8F7;
+	background: linear-gradient(#02B8F7,#D5F866);
+
 }
 .pagerecrutdev {
   background-image: url("../images/community.png");
@@ -546,11 +547,14 @@ ol, ul {
     margin-bottom: 					7vh;
 }
 .button-profil:hover, .button-profil:active {
-	border: 										solid 2px white;
+	border: 										solid 2px #036CAF;
 	width: 											184px;
 	height:										  47px;
 }
 
+.imagedev {
+	padding-bottom: 1vh;
+}
 
 /* PAGE CONTACT __ PAGE INSCRIPTION__ PAGE__CONNECTION_______________________________________________________________ */
 .bgContact {
@@ -818,7 +822,7 @@ ol, ul {
 
 /* le FAQ --------------------------------------------------------------------*/
 .recrutdev1{
-  background: 									#7cd4ff;
+  	background: linear-gradient(#3B3A7E,#E5E3EB);
 }
 
 .accordion , .hfaq {
@@ -913,9 +917,23 @@ a.waves-effect, a.waves-light {
 /* ACTUALITES___________________________________ */
 
 .actualites-geekzone {
-		width: 											55%;
-		margin: 										5vh auto;
+		width: 											57%;
+		line-height: 								2;
+		background-color: 					#C4F1FF;
+    border: 										1px solid #3B8EC4;
+    border-radius: 							5px;
+		margin: 										0vh 24vw;
+    padding: 										3vh 3vw;
+		margin:
 }
+
+.actualites-geekzone h4 {
+	 color: 											#31597C;
+	 font-size: 									1.4em;
+	 line-height: 								3;
+
+}
+
 
 .actu{
 	  width: 											100%;

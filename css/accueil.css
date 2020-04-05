@@ -162,12 +162,11 @@ span {
 			    display: 										flex;
 					flex-direction: 						column;
 			    justify-content: 						space-around;
-					align-items:
 			    padding-bottom: 						12vh;
 				}
 				.inputrecherc {
 				    overflow: 								visible;
-				    width: 										85%;
+				    width: 										96%!important;
 				    padding: 									0.6em;
 				    border-radius: 						2%;
 				    margin: 									2vw;
@@ -511,7 +510,7 @@ h3 {
 
 
 .recrutdev {
-	background: linear-gradient(#02B8F7,#D5F866);
+	background: linear-gradient( to right, #02B8F7,#D5F866);
 
 }
 .pagerecrutdev {

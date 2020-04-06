@@ -510,9 +510,22 @@ h3 {
 
 
 .recrutdev {
-	background: linear-gradient( to right, #02B8F7,#D5F866);
+	/* background: linear-gradient( to right, #02B8F7,#D5F866); */
 
+  background:  #02B8F7;
+  animation-name: fondbouge;
+  animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	  animation-direction: alternate;
+		/* alternate permet de continuer fluidement l'animation sans que ça reparte du jaune au bleu d'un coup */
 }
+
+@keyframes fondbouge {
+  from {background-color: #02B8F7;}
+  to {background-color: #D5F866;}
+}
+
 .pagerecrutdev {
   background-image: url("../images/community.png");
   position: 									relative;

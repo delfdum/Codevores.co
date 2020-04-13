@@ -49,6 +49,8 @@ table {
 
 /* FIN RESET CSS------------------------------------------------------------------------------------------------------------------ */
 
+/* bibliotheque*/
+
 .center {
   text-align:                 center;
 	font-family:               'Anton', sans-serif;
@@ -66,6 +68,7 @@ p {
 span {
 	font-weight: 								bold;
 }
+
 /*  boutons inscription et connection + le RESPONSIVE de ces 2 boutons_________________ */
  @media screen and (max-width: 600px)
 {
@@ -184,7 +187,7 @@ span {
 				}
 }
 
-
+/* les bakground de toutes les pages */
 
 .menutitle {
   background: url("../images/fond5.jpg") no-repeat center center;
@@ -853,38 +856,36 @@ ol, ul {
 }
 
 .button-faq {
-	border: 2px solid #3f3f3f;
-	background-color: inherit;
-	width: 189px;
-	height: 62px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border-radius: 3%;
-	font-size: 1em;
-	margin-bottom: 7vh;
+	border: 											2px solid #3f3f3f;
+	background-color: 						inherit;
+	width: 												189px;
+	height: 											62px;
+	display: 											flex;
+	flex-direction: 							column;
+	justify-content: 							center;
+	align-items: 									center;
+	border-radius: 								3%;
+	font-size: 										1em;
+	margin-bottom: 								7vh;
 }
 .button-faq:hover, .button-faq:active {
-	border: 										solid 2px white;
-	width: 189px;
-	height: 62px;
+	border: 											solid 2px white;
+	width: 												189px;
+	height:										  	62px;
 }
 
 /* la communauté --------------------------------------------------------------*/
 
 
 .btn-floating i {
-    font-size: 1.25rem;
-    line-height: 47px;
-    display: inline-block;
-    width: inherit;
-    text-align: center;
-    color: #fff;
+    font-size: 									1.25rem;
+    line-height: 								47px;
+    display: 										inline-block;
+    width: 											inherit;
+    text-align: 								center;
+    color: 											#fff;
 }
 
-élément {
-}
 .carousel-multi-item .controls-top .btn-floating {
     background: #02B8F7;
 }
@@ -953,8 +954,6 @@ a.waves-effect, a.waves-light {
 		font-size: 									1.3em;
 		cursor: 										pointer;
 		text-align: 								left;
-
-
 }
 
 /* FOOTER________________________________________________________ */

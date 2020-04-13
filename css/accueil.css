@@ -323,7 +323,7 @@ a {
 
 .menu-item:hover {
   background: white;
-  color: purple;
+  color: #1D695F;
 }
 .menu-item:nth-child(3) {
   -webkit-transition-duration: 180ms;

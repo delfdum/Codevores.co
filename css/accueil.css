@@ -260,6 +260,11 @@ a {
   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 }
 
+
+.icone-femme{
+position: relative;
+font-size: 1em;}
+
 .menu-open {
   display: none;
 }
@@ -700,6 +705,10 @@ ol, ul {
 	font-size: 									1.2em;
 	margin-left: 								7vw;
 }
+.button-inscription:hover, .button-inscription:active {
+	border: 										solid 4px #1F645A;
+}
+
 
 .button-connecter {
 	color: 											white;
@@ -713,6 +722,13 @@ ol, ul {
 	border-radius: 							3%;
 	font-size: 									0.8em;
 	margin-left: 								9vw;
+}
+.button-connecter:hover, .button-connecter:active {
+	border: 										solid 4px #1F645A;
+}
+.button-connecter a {
+	text-decoration: none;
+	color: white;
 }
 
 .documentLabel {
@@ -964,6 +980,12 @@ a.waves-effect, a.waves-light {
 	align-items: 							center;
 	align-content: 						center;
 	padding: 									2vh 0vw 2vh 0vw;
+	color:                    white;
+	background: url("../images/fond5.jpg") no-repeat;
+	background-size: 					250%;
+	background-position: 			49%;
+	width: 															100%;
+
 }
 
 .rowfooter1 {
@@ -972,6 +994,11 @@ a.waves-effect, a.waves-light {
 	justify-content: 					space-around;
 	align-items: 							center;
 	margin: 									28px 9vw;
+}
+
+.rowfooter1 h4 {
+	font-size:								1.7em;
+	line-height: 							9vh;
 }
 
 .icone {

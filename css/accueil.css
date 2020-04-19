@@ -73,7 +73,7 @@ span {
 /*  boutons inscription et connection + le RESPONSIVE de ces 2 boutons_________________ */
  @media screen and (max-width: 600px)
 {
-    .buttonbase
+    .buttonbase, .buttonbase1
     {
       justify-content: 					space-around;
 			padding: 											23px 10px;
@@ -90,7 +90,7 @@ span {
   margin-left: 									12px;
 }
 
-.buttonbase a {
+.buttonbase a, .buttonbase1 a {
  text-decoration: 							none;
 }
 
@@ -145,7 +145,7 @@ span {
 				.h2entete {
 					font-size:                  1.5em;
 				}
-				.buttonbase {
+				.buttonbase , .buttonbase1 {
 				  display:										flex;
 				  justify-content: 						space-around;
 				}
@@ -956,6 +956,104 @@ a.waves-effect, a.waves-light {
   .carousel-indicators .active {
     opacity: 0;
 }
+/* page cv pro dev*/
+.menuCommunauty1 {
+  background: url("../images/fond1.jpg") no-repeat center center;
+	background-size: 						131%;
+	background-attachment: 			fixed;
+}
+
+.rowPro {
+	display: flex;
+	margin-left: -15px;
+	justify-content: space-between;
+}
+
+.buttonbase1 {
+	  padding: 											25px 10px;
+	  margin-left: 									12px;
+	}
+
+.cvPro {
+			display: 										flex;
+			flex-direction: 						column;
+			color: 											black;
+			border: 										solid 1px #00123a;
+			border-radius: 							14% 14%;
+			padding: 										5vh 2vw;
+			margin: 										0 7vw 5vh 7vw;
+			background-color: 					#2B7FEF;
+			opacity: 										0.9;
+		}
+
+.cvPro-partie1 {
+		display: 									flex;
+		justify-content: 					space-between;
+margin-right: 123px;
+}
+
+.dev-centre {
+		display: 											flex;
+		flex-direction: 							column;
+		justify-content: 							space-around;
+		align-items: 									flex-start;
+}
+.image-Pro {
+		width: 												25%;
+		border-radius: 								50% 4%;
+}
+
+.button-dev {
+		padding-top: 									90px;
+}
+
+.button-competences {
+	 margin-right: 								25px;
+	 background-color:						#00123a;
+	 border-radius: 							15px;
+	 border: 											solid #a9dfff;
+	 color: 											white;
+	 width: 											13%;
+	 padding: 										1%;
+}
+
+.button-contact {
+	background-color: #98D0F7;
+	border-radius: 15px;
+	border: solid #001747;
+	color: black;
+	width: 156%;
+	padding: 15%;
+	margin-right: 128%;
+}
+
+
+.carousel-control-prev-icon
+{
+  background-color: black;
+  background-size: 15px 15px;
+}
+
+.carousel-control-next-icon
+{
+  background-color: black;
+  background-size: 15px 15px;
+}
+.realisations
+{
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+.realisations h4
+{
+  color: #030027;
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
 
 /* ACTUALITES___________________________________ */
 

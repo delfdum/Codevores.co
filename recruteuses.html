@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!-- les polices  -->
+  <script src="https://kit.fontawesome.com/682d71be2a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <!-- ICONE DANS ONGLET -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/bootstrap.min.css.map.css">
+  <!-- mon css -->
+  <link rel="stylesheet" type="text/css" href="./css/accueil.css">
+  <title>Codevores</title>
+</head>
+
+<body class="bgblue">
+  <div class="menutitle">
+    <!-- les boutons inscription et connection et titres ************************** -->
+    <div class="buttonbase">
+      <button class="btn-connection" type="button" name="button"><a href="connexion.html">connection</a></button>
+      <button class="btn-inscription" type="button" name="button"><a href="inscription.html">inscription</a></button>
+    </div>
+    <h1 class="h1entete">codevores.co</h1> <br>
+    <h2 class="h2entete">Votre développeuse en un clic!</h2>
+    <!-- le menu    ************************************************************* -->
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+      <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+      </label>
+      <a href="accueil.html" class="menu-item"> <i class="fas fa-home"></i> </a>
+      <a href="communauty.html" class="menu-item"> <i class="fas fa-users"></i></a>
+      <a href="actualites.html" class="menu-item"> <i class="far fa-newspaper"></i></a>
+      <a href="faq.html" class="menu-item"><i class="fas fa-question"></i> </a>
+      <a href="contact.html" class="menu-item"> <i class="fa fa-envelope"></i> </a>
+       <a href="recruteuses.html" class="menu-item">  <i class="fas fa-user-astronaut"></i></a>
+    </nav>
+    <!-- filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="shadowed-goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- le main *********************************************************** -->
+  <div class="container center">
+    <div class="row intertitre">
+      <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Vous voulez nous rejoindre !</h2>
+      </article>
+    </div>
+  </div>
+
+    <div class="container-fluid  ">
+      <div class="border-ligne"></div>
+      <div class="container recrutdev">
+        <div class="row cascade">
+          <article class="dev  interesponsive col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <!-- <h3>Rejoignez-nous!</h3> -->
+            <p class="interesponsive sizeresponsive">Vous êtes développeuse, rejoignez Codevores!
+              <br>
+              <p class="interesponsive sizeresponsive">Le freelancing comme il devrait être:</p>
+              <ul>
+                <li>- Des missions que vous choisissez</li>
+                <li>- Un service simple et sécurisant</li>
+                <li>- Le soutien d'une communauté d'experts</li>
+              </ul>
+
+            <button class="button-profil interesponsive" type="button" name="button">Créez votre profil</button>
+          </article>
+          <article class="interesponsive col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <img class="taille-image imagedev" src="./images/rejoignez-nous.jpg" alt="">
+          </article>
+        </div>
+      </div>
+      <div class="border-ligne"></div>
+    </div>
+
+
+
+
+    <div class="container center">
+      <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Vos missions. Vos conditions.</h2>
+        </article>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row intro">
+        <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+          <p> <span> Choisissez vos missions </span> <br><br>
+            Des milliers de clients proposent déjà des missions sur . Il y en a pour tous les secteurs.
+          </p>
+        </div>
+        <div class="interesponsive col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+
+          <p> <span> Fixez vos conditions</span> <br> <br>
+            Définissez vos prix, vos préférences de travail, et vos disponibilités pour chaque mission. C’est vous qui décidez.
+          </p>
+          </div>
+        <div class="interesponsive col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+
+          <p><span>Traitez en direct</span>  <br> <br>
+            Sur Codevores.co, les clients vous contactent directement pour vous proposer des missions. Libre à vous d’accepter ou de refuser. Il n'y a pas d’intermédiaire.
+          </p>
+        </div>
+      </div>
+    </div>
+<div class="border-ligne"></div>
+
+      <div class="container center">
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>Un service simple et sécurisant</h2>
+          </article>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row intro">
+          <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+            <p> <span> Créez un profil simplement</span> <br><br>
+              Il suffit de quelques minutes pour créer un profil qui attirera l'attention de milliers de clients — et rendra fiers vos parents.
+            </p>
+          </div>
+          <div class="interesponsive col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+            <p> <span>Gagnez du temps</span> <br> <br>
+              Éditez vos devis rapidement. Envoyez vos factures automatiquement. Simplifiez vos tâches administratives.
+            </p>
+            </div>
+          <div class="interesponsive col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+            <p><span>Soyez payé en 48h</span>  <br> <br>
+              Malt sécurise votre paiement avant le début de la mission. Une fois le projet terminé, vous recevez l'argent sous 48 heures.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <footer>
+<div class="border-ligne"></div>
+        <div class="rowfooter footermenuaccueil">
+
+          <div class="rowfooter1">
+            <a href="contact.html">CONTACT </a>
+            <a href="actualites.html">PRESSE </a>
+            <a href="#">MENTIONS LÉGALES </a>
+            <a href="#">CGU</a>
+          </div>
+          <div class="rowfooter1 nom-adress">
+            <h4>Codevores.co</h4>
+            <h5>12 rue du Paradis</h5>  <br>
+            <h5>75020 Paris</h5>
+          </div>
+          <div class="rowfooter1 icone">
+            <a href="https://www.instagram.com/descodeuses/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://fr-fr.facebook.com/descodeuses/" target="_blank"><i class="fab fa-facebook-square"></i></a> <br>
+            <a href="https://twitter.com/DesCodeuses?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a> <br>
+
+          </div>
+        </div>
+      </footer>
+
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./js/accueil.js"></script>
+    </body>
+    </html>

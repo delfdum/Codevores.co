@@ -959,7 +959,7 @@ a.waves-effect, a.waves-light {
 /* page cv pro dev*/
 .menuCommunauty1 {
   background: url("../images/fond1.jpg") no-repeat center center;
-	background-size: 						131%;
+	background-size: 						cover;
 	background-attachment: 			fixed;
 }
 
@@ -989,14 +989,16 @@ a.waves-effect, a.waves-light {
 .cvPro-partie1 {
 		display: 									flex;
 		justify-content: 					space-between;
-margin-right: 123px;
+		flex-wrap: 								wrap;
+
+		margin-right: 						123px;
 }
 
 .dev-centre {
 		display: 											flex;
 		flex-direction: 							column;
-		justify-content: 							space-around;
-		align-items: 									flex-start;
+		justify-content: 							space-between;
+		align-items: 									center;
 }
 .image-Pro {
 		width: 												25%;
@@ -1007,14 +1009,22 @@ margin-right: 123px;
 		padding-top: 									90px;
 }
 
+.ens-competence {
+	display: 											flex;
+	flex-wrap: 										wrap;
+	margin: 											2vh;
+}
+
 .button-competences {
-	 margin-right: 								25px;
+	 font-size: 									0.8em;
+	 padding: 										1.2vh 1.4vw;
+	 margin:                      1vh auto;
 	 background-color:						#00123a;
 	 border-radius: 							15px;
 	 border: 											solid #a9dfff;
 	 color: 											white;
 	 width: 											13%;
-	 padding: 										1%;
+	 cursor: 										  pointer;
 }
 
 .button-contact {
@@ -1055,6 +1065,29 @@ margin-right: 123px;
 }
 
 
+ @media all and  (max-width: 900px){
+				.cvPro-partie1 {
+				    display: 							flex;
+				    flex-direction: 			column;
+				    justify-content: 			space-between;
+				    margin-right: 				-5vh;
+				    align-items: 					center;
+					}
+					.dev-centre {
+						margin-top: 					10vh;
+						line-height: 					6vh;
+					}
+					.button-dev {
+    				padding-top: 					6vh;
+					}
+					.image-Pro {
+					    width: 							61%;
+					    border-radius: 			50% 4%;
+					}
+					.none {
+						display: 							none;
+					}
+}
 /* ACTUALITES___________________________________ */
 
 .actualites-geekzone {
